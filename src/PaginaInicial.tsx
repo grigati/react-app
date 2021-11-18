@@ -6,6 +6,7 @@ interface Props {}
 const PaginaInicial = (props: Props) => {
   const breadcrumbs = useBreadcrumbs();
   console.log(breadcrumbs);
+  console.log(process.env);
   return (
     <div>
       {process.env.REACT_APP_GREETINGS} <br />
