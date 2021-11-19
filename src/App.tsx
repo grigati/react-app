@@ -1,8 +1,8 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import "./App.css";
-import Pagina2 from "./Pagina2";
-import Pagina404 from "./Pagina404";
-import PaginaInicial from "./PaginaInicial";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import './App.css';
+import Pagina2 from './Pagina2';
+import Pagina404 from './Pagina404';
+import PaginaInicial from './PaginaInicial';
 
 const App = () => {
   return (

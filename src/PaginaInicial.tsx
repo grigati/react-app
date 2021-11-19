@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import useBreadcrumbs from "use-react-router-breadcrumbs";
+import { Link } from 'react-router-dom';
+import useBreadcrumbs from 'use-react-router-breadcrumbs';
 
-interface Props {}
+// interface Props {}
 
-const PaginaInicial = (props: Props) => {
+const PaginaInicial = () => {
   const breadcrumbs = useBreadcrumbs();
   console.log(breadcrumbs);
   console.log(process.env);
