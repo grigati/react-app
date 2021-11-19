@@ -27,6 +27,8 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-testing-library": "^5.0.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.4.1"
   },
   "dependencies": {
@@ -45,7 +47,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx  --fix ./",
-    "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}' '*.json'"
+    "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}' '*.json'",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -64,5 +67,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": "yarn format"
   }
 }
